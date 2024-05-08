@@ -1,6 +1,8 @@
 googletrans==4.0.0rc1
 gtts
 pygame
-pyaudio
-time
 SpeechRecognition
+fastapi
+uvicorn
+requests
+pyaudio

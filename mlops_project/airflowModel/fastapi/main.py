@@ -6,6 +6,10 @@ from translation import translate_text
 
 
 def main():
+
+
+    print('Hello Folks!')
+    
     # Choose source and target languages
     source_language = "en"  # English
     target_language = "hi"  # Hindi
@@ -21,6 +25,7 @@ def main():
         # Convert translated text to speech in the target language
         text_to_speech(translated_text, target_language)
 
+    
 
 if __name__ == "__main__":
     main()

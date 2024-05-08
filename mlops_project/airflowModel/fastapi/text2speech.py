@@ -1,6 +1,7 @@
 from gtts import gTTS
 import pygame
 import time
+import os
 
 def text_to_speech(text, language):
     # Convert text to speech
@@ -16,8 +17,9 @@ def text_to_speech(text, language):
         time.sleep(0.1)
     
     # # Remove the temporary file
-    # pygame.mixer.music.stop()
+    pygame.mixer.music.stop()
 
     # # Retry deletion with a delay
-    # os.remove(speech_file)
+    os.remove(speech_file)
+    os.delete(speech_file)
 
