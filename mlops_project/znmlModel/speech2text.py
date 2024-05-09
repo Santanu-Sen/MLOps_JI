@@ -1,6 +1,7 @@
 import speech_recognition as sr
+from zenml import step
 
-
+@step
 def speech_to_text():
     # Initialize recognizer
     recognizer = sr.Recognizer()
@@ -17,7 +18,7 @@ def speech_to_text():
         return text
     except sr.UnknownValueError:
         print("Sorry, could not understand audio.")
-        return ""
+        return ("Sorry, could not understand audio")
     except sr.RequestError as e:
         print("Could not request results; {0}".format(e))
-        return ""
+        return ("Sorry, could not understand audio")

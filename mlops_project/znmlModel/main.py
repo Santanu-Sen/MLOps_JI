@@ -1,10 +1,10 @@
 from speech2text import speech_to_text
 from text2speech import text_to_speech
 from translation import translate_text
+from zenml import pipeline
 
 
-
-
+@pipeline
 def main():
 
 
